@@ -1,0 +1,141 @@
+/* ATHU Panel Styles - Dark theme, minimal, professional */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: transparent;
+  min-width: 360px;
+}
+
+.athu-panel {
+  background: #1a1a2e;
+  color: #e0e0e0;
+  border-radius: 12px;
+  border: 1px solid #2d2d4e;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  overflow: hidden;
+  min-width: 360px;
+}
+
+.athu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #16213e;
+  border-bottom: 1px solid #2d2d4e;
+}
+
+.athu-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #4fc3f7;
+}
+
+.athu-logo {
+  width: 28px; height: 28px;
+  background: linear-gradient(135deg, #4fc3f7, #0288d1);
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 900; font-size: 16px; color: #fff;
+}
+
+.status-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+.status-connected { background: #4caf50; box-shadow: 0 0 6px #4caf50; }
+.status-disconnected { background: #f44336; }
+.status-thinking { background: #ff9800; animation: pulse 1s infinite; }
+
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+.athu-response-area {
+  padding: 14px 16px;
+  min-height: 80px;
+  background: #0f3460;
+  border-bottom: 1px solid #2d2d4e;
+}
+
+.response-text {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #e8f4fd;
+  white-space: pre-wrap;
+}
+
+.athu-transcript {
+  padding: 8px 16px;
+  min-height: 30px;
+  background: #1a1a2e;
+  border-bottom: 1px solid #2d2d4e;
+}
+
+.transcript-text {
+  font-size: 11px;
+  color: #888;
+  font-style: italic;
+}
+
+.athu-input-area {
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px;
+  background: #1a1a2e;
+}
+
+.athu-input {
+  flex: 1;
+  background: #2d2d4e;
+  border: 1px solid #3d3d6e;
+  border-radius: 8px;
+  color: #e0e0e0;
+  padding: 8px 12px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.athu-input:focus { border-color: #4fc3f7; }
+
+.athu-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.athu-btn:hover { opacity: 0.85; }
+.athu-btn-primary { background: #0288d1; color: #fff; }
+.athu-btn-secondary { background: #2d2d4e; color: #aaa; }
+.athu-btn-danger { background: #c62828; color: #fff; }
+
+.trading-confirm {
+  padding: 16px;
+  background: #1a0a0a;
+  border: 2px solid #c62828;
+  margin: 8px;
+  border-radius: 8px;
+}
+.trading-confirm-text { font-size: 13px; margin-bottom: 12px; color: #ffcdd2; }
+.trading-confirm-buttons { display: flex; gap: 8px; }
+.hidden { display: none !important; }
+
+.athu-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+  font-size: 11px;
+  color: #555;
+  background: #16213e;
+  border-top: 1px solid #2d2d4e;
+}
+.footer-link { color: #4fc3f7; text-decoration: none; }
+.footer-link:hover { text-decoration: underline; }
