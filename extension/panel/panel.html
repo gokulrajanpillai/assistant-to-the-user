@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATHU Panel</title>
+  <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+  <div class="athu-panel">
+    <div class="athu-header">
+      <div class="athu-title">
+        <span class="athu-logo">A</span>
+        <span>ATHU</span>
+      </div>
+      <div id="status-indicator" class="status-dot status-disconnected" title="Disconnected"></div>
+    </div>
+
+    <div class="athu-response-area">
+      <div id="response-text" class="response-text">Connecting to ATHU...</div>
+    </div>
+
+    <div class="athu-transcript">
+      <div id="transcript-text" class="transcript-text"></div>
+    </div>
+
+    <div class="athu-input-area">
+      <input
+        type="text"
+        id="text-input"
+        class="athu-input"
+        placeholder="Type a message..."
+        autocomplete="off"
+      >
+      <button id="send-btn" class="athu-btn athu-btn-primary">Send</button>
+    </div>
+
+    <div id="trading-confirm" class="trading-confirm hidden">
+      <div class="trading-confirm-text" id="trading-confirm-text"></div>
+      <div class="trading-confirm-buttons">
+        <button id="trading-confirm-btn" class="athu-btn athu-btn-danger">
+          CONFIRM TRADE (double-click)
+        </button>
+        <button id="trading-cancel-btn" class="athu-btn athu-btn-secondary">Cancel</button>
+      </div>
+    </div>
+
+    <div class="athu-footer">
+      <a href="#" id="settings-link" class="footer-link">Settings</a>
+      <span class="footer-version">v0.1.0</span>
+    </div>
+  </div>
+  <script src="panel.js"></script>
+</body>
+</html>
